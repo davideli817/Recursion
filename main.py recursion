@@ -1,0 +1,16 @@
+    #To determine the nth number in the fibonacci sequence, we use a recursive function
+def fibonacci(n):
+    # Base case: return n if n <= 1
+    if n <= 1:
+        return n
+    # Recursive case: add the (n-1)st and (n-2)nd integers to get the nth number
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
+
+# Testing with input values
+assert fibonacci(0) == 0
+assert fibonacci(1) == 1
+assert fibonacci(2) == 1
+assert fibonacci(5) == 5
+assert fibonacci(15) == 610
+assert fibonacci(20) == 6765
